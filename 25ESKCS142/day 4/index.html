@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Lab | Build Sprint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">DevSprint</div>
+        <nav class="nav-links">
+            <a href="#counter-section">Counter</a>
+            <a href="#form-section">Registration</a>
+        </nav>
+        <button id="theme-toggle" class="btn-toggle">Dark Mode 🌙</button>
+    </header>
+
+    <main class="container">
+        <section class="hero-header">
+            <h1>Interactive Landing Page</h1>
+            <p>Mastering variables, functions, DOM manipulation, events, and validation.</p>
+        </section>
+
+        <section id="counter-section" class="card">
+            <h2>03. Live Click Counter</h2>
+            <p class="counter-display">Clicks: <span id="counter-value">0</span></p>
+            <div class="button-group">
+                <button id="btn-click" class="btn btn-click">Click Me! 🚀</button>
+                <button id="btn-reset" class="btn btn-reset">Reset</button>
+            </div>
+        </section>
+
+        <section id="form-section" class="card">
+            <h2>04. Secure Registration Form</h2>
+            <form id="sprint-form" novalidate>
+                <div class="form-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="username" placeholder="Enter your full name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="username@example.com">
+                    <span class="error-message" id="email-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

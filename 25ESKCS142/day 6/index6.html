@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   hello world 
+</body>
+   <script>
+   let students = [
+       { name: "himesh", dob: "12/12/2000", section: "a", year: 2026 },
+        { name: "hitesh", dob: "12/07/2009", section: "a", year: 2026 },
+        { name: "raj", dob: "1/12/2007", section: "a", year: 2026 }
+   ];
+   
+   console.log(JSON.stringify(students));
+
+
+
+   //convert object to json string
+   const jsonString = JSON.stringify(students);
+   console.log(jsonString);
+
+   //convert json string to object
+   const jsonObject = JSON.parse(jsonstring);
+
+
+   </script>
+
+</html>
